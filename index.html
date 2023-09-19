@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://icon-library.com/images/temperature-icon-png/temperature-icon-png-14.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <span><b id="timee"></b></span>
+            <div>
+                <i class="fa-solid fa-tower-broadcast"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </div>
+        <h2>Temperature Converter</h2>
+        <div class="input_label_container">
+            <div class="degrees"><label>Degrees</label><input type="number" id="temperature" name="temperature"  /></div>
+            <div class="degrees"><label>Type</label><select id="dropdown">
+                    <option value="farenheit">Farenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select></div>
+        </div>
+        <div class="result"><label>Results</label><input type="number" id="celcius" name="celcius" readonly />&#176;C</div>
+      <button class="btn_convert" onclick="getTmp()">Convert</button>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
